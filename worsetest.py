@@ -62,15 +62,13 @@ def dfs(player_hand, pile, depth, maximizing_player):
                 new_pile = pile + [card]
                 eval_score = dfs(new_player_hand, new_pile, depth - 1, True)
                 min_eval = min(min_eval, eval_score)
-                
         return min_eval
-
 
 # Find the optimal move using the depth-first search algorithm
 
+
 def find_optimal_move(player_hand, pile, depth):
     optimal_score = float('-inf')
-
     optimal_move = None
     for card in player_hand:
         if is_valid_move(card, pile):
@@ -78,17 +76,20 @@ def find_optimal_move(player_hand, pile, depth):
             new_pile = pile + [card]
             eval_score = dfs(new_player_hand, new_pile, depth - 1, False)
 
-
-
             if eval_score > optimal_score:
                 optimal_score = eval_score
                 optimal_move = card
 
     return optimal_move
 
+
 # Example usage
 player_hand = deck[:10]  # Initial hand for the player
+
 pile = []  # Pile of played cards
 
 
 depth = 3  # Depth of the search algorithm
+
+optimal_move = find_optimal_move(player_hand, pile, depth)
+print("Optimal Move:", optimal_move)
