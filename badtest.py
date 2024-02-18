@@ -67,6 +67,7 @@ def dfs(player_hand, pile, depth, maximizing_player):
 
 # Find the optimal move using the depth-first search algorithm
 
+
 def find_optimal_move(player_hand, pile, depth):
     optimal_score = float('-inf')
 
