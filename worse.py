@@ -14,12 +14,13 @@ def combine_functions(func1, func2):
 # Example usage
 
 
-
 def uppercase_string(string):
     return string.upper()
 
+
 def lowercase_string(string):
     return string.lower()
+
 
 combined = combine_functions(uppercase_string, lowercase_string)
 result = combined("Hello", "World")
