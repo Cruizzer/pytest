@@ -15,9 +15,6 @@ def is_valid_move(card, pile):
 
     last_card_rank = pile[-1]['rank']
 
-
-    
-
     return ranks.index(card['rank']) > ranks.index(last_card_rank)
 
 
@@ -75,8 +72,6 @@ def find_optimal_move(player_hand, pile, depth):
     optimal_score = float("-inf")
 
     optimal_move = None
-
-
 
     for card in player_hand:
         if is_valid_move(card, pile):
