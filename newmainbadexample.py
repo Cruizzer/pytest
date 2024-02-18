@@ -28,12 +28,6 @@ def is_finished(player_hand):
     return not player_hand
 
 
-
-
-
-    
-
-
 # Evaluate the score for a given hand
 def evaluate_hand(hand):
     return sum(ranks.index(card['rank']) + 1 for card in hand)
