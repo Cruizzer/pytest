@@ -82,6 +82,7 @@ def find_optimal_move(player_hand, pile, depth):
 
     return optimal_move
 
+
 # Example usage
 player_hand = deck[:10]  # Initial hand for the player
 pile = []  # Pile of played cards
