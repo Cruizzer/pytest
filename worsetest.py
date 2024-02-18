@@ -55,6 +55,7 @@ def dfs(player_hand, pile, depth, maximizing_player):
         return max_eval
 
     else:
+        
         min_eval = float('inf')
         for card in player_hand:
             if is_valid_move(card, pile):
