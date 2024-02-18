@@ -8,7 +8,6 @@ def combine_functions(func1, func2):
 
         result2 = func2(str2)
 
-
         return add_strings(result1, result2)
     return combined_function
 
