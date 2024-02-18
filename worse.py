@@ -8,19 +8,19 @@ def combine_functions(func1, func2):
 
         result2 = func2(str2)
 
-
         return add_strings(result1, result2)
     return combined_function
 
 # Example usage
 
 
-
 def uppercase_string(string):
     return string.upper()
 
+
 def lowercase_string(string):
     return string.lower()
+
 
 combined = combine_functions(uppercase_string, lowercase_string)
 result = combined("Hello", "World")
